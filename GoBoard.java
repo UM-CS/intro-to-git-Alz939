@@ -50,7 +50,7 @@ public class GoBoard {
 
             if ((moveY > dimension || moveY < 0) || (moveX > dimension || moveX < 0)) {
                 System.out.println(
-                        "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\nOut of Bounds!\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n");
+                        "Out of Bounds!");
                 continue;
             } else {
 
@@ -58,7 +58,7 @@ public class GoBoard {
                     goBoard[moveY][moveX] = ((turn) ? "B" : "W");
                 } else {
                     System.out.println(
-                            "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\nThere is already a piece there!\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n");
+                            "Space Occupied");
                     continue;
                 }
                 
